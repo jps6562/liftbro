@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+button{
+  min-width: 10%;
+  max-width: 10%;
+  min-height: 20%;
+  max-height: 20%;
+  color: black;
+  background-color: green;
+}

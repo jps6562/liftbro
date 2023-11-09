@@ -29,8 +29,14 @@ function Square() {
 
   function handleClick()
   {
-    setValue('X');
+    setValue(!value);
     console.log('clicked');
   }
-  return <button className="square" onClick={handleClick}>{value}</button>;
+  return <button className="square" onClick={handleClick}>{GetSquareValue(value)}</button>;
+}
+
+function GetSquareValue(input)
+{
+  if(input === true){return 'X';}
+  else { return '';}
 }
